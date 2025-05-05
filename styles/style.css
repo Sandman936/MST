@@ -1,0 +1,353 @@
+.header {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    height: 58px;
+    max-width: 1597px;
+    margin-inline: auto;
+    text-transform: uppercase;
+    transition: background-color 0.4s ease-in-out;
+    z-index: 1;
+    top: 0;
+}
+
+.header.scrolled {
+    background-color: #111;
+}
+
+.header__navbar {
+    font-size: 16px;
+    font-style: italic;
+    letter-spacing: 0.4px;
+}
+
+.header__navbar-list {
+    display: flex;
+    gap: 29px;
+}
+
+.logo {
+    font-size: 36px;
+    font-family: 'Prata', serif;
+    letter-spacing: 0.3px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    min-width: 320px;
+    margin: 15.25rem auto 0;
+}
+
+.intro-section {
+    max-width: 1597px;
+    width: 100%;
+    margin: 0 auto 3.125rem;
+}
+
+.info-block {
+    max-width: 537px;
+}
+
+.info-block__title {
+    font-family: 'Prata', serif;
+    font-size: 80px;
+    margin-block-end: 50px;
+}
+
+.info-block__desc {
+    font-size: 50px;
+    margin-block-end: 64px;
+}
+
+.info-block__list {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    font-size: 24px;
+    margin-block-end: 40px;
+}
+
+.info-block__list__item::before {
+   width: 38px;
+   height: 38px;
+   content: '';
+   position: absolute;
+   background: no-repeat url(../images/plus_icon.png);
+   margin-inline-start: -47px;
+   margin-block-start: 10px;
+}
+
+.info-block__list__item {
+    position: relative;
+    border-radius: 4px;
+    padding: 2.5px 20px 2.5px 56px;
+    background-color: rgba(40, 40, 41, 0.7);
+    width: fit-content;
+}
+
+.accent-text {
+    font-family: 'Prata', serif;
+    font-size: 40px;
+}
+
+.image-container {
+    position: absolute;
+    width: clamp(30rem, 0rem + 40vw, 47.690rem);
+    height: 120%;
+    top: 0;
+    right: 0;
+    background-image: 
+        url(../images/img_1.jpg),
+        linear-gradient(rgba(176, 177, 161, 1), rgba(0, 0, 0, 0.2));
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: -1;
+}
+
+.list-section {
+    padding-block-start: 100px;
+    display: grid;
+    grid-template-columns: 32% auto 32%;
+    background-color: #282829;
+}
+
+.left-side-image {
+    background-image: url(../images/img_2.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.right-side-image {
+    background-image: url(../images/img_3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.text-block {
+    padding: 54px 53px 0 53px;
+}
+
+.text-block__list {
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-block-end: 80px;
+}
+
+.text-block__list__item {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    padding-block-end: 40px;
+    border-bottom: 1px solid #55565A;
+}
+
+.thumbsup-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.signup-section {
+    padding-block: 100px;
+    background-color: #282829;
+}
+
+.signup-block {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    padding: 72px 682px 72px 134px;
+    border-radius: 30px;
+    max-width: 1597px;
+    margin: auto;
+    background: #FFF no-repeat url(../images/img_4.png);
+    background-position: right -250px center;
+    background-size: 45% 100%;
+}
+
+.signup-block::after {
+    width: 1160px;
+    height: 680px;
+    content: '';
+    position: absolute;
+    background: no-repeat url(../images/img_5.png);
+    background-size: contain;
+    inset-inline-end: -180px;
+    inset-block-end: 0;
+}
+
+.signup-block__title {
+    font-family: 'Prata', serif;
+    font-size: 54px;
+    color: #38535D;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.signup-form__input[type="text"], .signup-form__input[type="email"] {
+    background-color: #FFF;
+    border: 2px solid #D6D6D6;
+    padding: 14.5px 38px;
+    height: 65px;
+    border-radius: 4px;
+    font-size: 24px;
+    color: #55565A;
+}
+
+.signup-form__input[type="checkbox"] {
+    margin: 0;
+    width: 24px;
+    height: 24px;
+}
+
+.signup-form__label {
+    font-size: 19px;
+    color: #55565A;
+}
+
+.checkbox-container {
+    padding-block: 1px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.text-inputs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.footer {
+    background-color: #222;
+    text-transform: uppercase;
+}
+
+.footer_navbar {
+    padding: 40px 0;
+    border-top: 1px solid #D5C9BE;
+    border-bottom: 1px solid #D5C9BE;
+}
+
+.footer_navbar__list {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.footer_navbar__list-item {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.bottom-container {
+    padding: 43px 160px 53px 160px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.bottom-container__el1 {
+    padding-block: 9px 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+}
+
+.bottom-container__el2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 63px;
+}
+
+.bottom-container__el3 {
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+    padding-inline: 353px 23px;
+    align-items: flex-end;
+}
+
+.socials-list {
+    display: flex;
+    justify-content: center;
+    padding-block-start: 21px;
+    gap: 32px;
+}
+
+.socials-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.link {
+    font-size: 20px;
+    text-decoration: none;
+    text-transform: none;
+    color: #D5C9BE;
+}
+
+.copyright-text {
+    text-transform: none;
+    font-size: 20px;
+    color: #FFF;
+}
+
+.hidden {
+    visibility:hidden;
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/* buttons styles */
+.button {
+    border-radius: 4px;
+    width: 100%;
+    padding-block: 32px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+}
+
+.small-button {
+    font-size: 24px;
+    font-weight: bold;
+    width: 36%;
+}
+
+.small-button-2 {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.wide-button {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.join-button {
+    color: #282829;
+    background-color: #FFF;
+}
+
+.submit-button {
+    color: #FFF;
+    font-size: 24px;
+    background-color: #282829;
+}
+

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinguaSphere</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/global.css">
+    <script>
+        document.addEventListener('scroll', () => {
+            const header = document.getElementById("header");
+
+            if (window.scrollY > 0) {
+                header.classList.add("scrolled");
+            } else {
+                header.classList.remove("scrolled")
+            }
+        })
+    </script>
+</head>
+
+<body>
+    <header class="header" id="header">
+        <h1 class="logo">LinguaSphere</h1>
+        <nav class="header__navbar">
+            <ul class="header__navbar-list">
+                <li class="header__navbar-list-item">
+                    <a>Home</a>
+                </li>
+                <li class="header__navbar-list-item">
+                    <a>About us</a>
+                </li>
+                <li class="header__navbar-list-item">
+                    <a>Contacts</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="content">
+        <section class="intro-section">
+            <div class="info-block">
+                <h2 class="info-block__title">Gateway to the World of Languages</h2>
+                <p class="info-block__desc">Our advantages:</p>
+                <ul class="info-block__list">
+                    <li class="info-block__list__item">individual <span class="accent-text">special</span> approach</li>
+                    <li class="info-block__list__item"><span class="accent-text">flexible</span> schedule</li>
+                    <li class="info-block__list__item">interactive <span class="accent-text">learning</span> for you</li>
+                </ul>
+                <button class="button join-button small-button">Join</button>
+            </div>
+            <div class="image-container"></div>
+        </section>
+        <section class="list-section">
+            <div class="left-side-image"></div>
+            <div class="text-block">
+                <ul class="text-block__list">
+                    <li class="text-block__list__item">
+                        <img class="thumbsup-icon" src="./images/thumbsup_icon.png" alt="thumbs up icon">
+                        <p>We take into account your goals, level of knowledge and personal preferences to
+                            create the optimal training program</p>
+                    </li>
+                    <li class="text-block__list__item">
+                        <img class="thumbsup-icon" src="./images/thumbsup_icon.png" alt="thumbs up icon">
+                        <p>You can study at a time convenient for you and in any place where there is access
+                            to the Internet</p>
+                    </li>
+                    <li class="text-block__list__item">
+                        <img class="thumbsup-icon" src="./images/thumbsup_icon.png" alt="thumbs up icon">
+                        <p>Our platform offers a variety of interactive exercises, tests and games to help
+                            you consolidate your acquired knowledge</p>
+                    </li>
+                    <li class="text-block__list__item">
+                        <img class="thumbsup-icon" src="./images/thumbsup_icon.png" alt="thumbs up icon">
+                        <p>Our experienced teachers are always ready to answer your questions and help you
+                            overcome any difficulties</p>
+                    </li>
+                </ul>
+                <button class="button join-button wide-button">Join</button>
+            </div>
+            <div class="right-side-image"></div>
+        </section>
+        <section class="signup-section">
+            <div class="signup-block">
+                <h3 class="signup-block__title">Fill out the short form</h3>
+                <form class="signup-form">
+                    <div class="text-inputs-container">
+                        <input placeholder="Name" id="name" name="signup-form-name" class="signup-form__input" type="text">
+                        <label for="signup-form-name" class="hidden signup-form__label">Name</label>
+                        <input placeholder="E-mail" id="email" name="signup-form-email" class="signup-form__input" type="email">
+                        <label for="signup-form-email" class="hidden signup-form__label">E-mail</label>
+                    </div>
+                    
+                    <div class="checkbox-container">
+                        <input id="agree" name="signup-form-agree" class="signup-form__input" type="checkbox">
+                        <label for="signup-form-agree" class="signup-form__label">I accept Privacy policy</label>
+                    </div>
+                    
+                    <button class="button submit-button signup-form__button">SUBMIT FORM</button>
+                </form>
+            </div>
+            
+        </section>
+    </main>
+    <footer class="footer">
+        <nav class="footer_navbar">
+            <ul class="footer_navbar__list">
+                <li class="footer_navbar__list-item">
+                    <a>Home</a>
+                </li>
+                <li class="footer_navbar__list-item">
+                    <a>About us</a>
+                </li>
+                <li class="footer_navbar__list-item">
+                    <a>Contacts</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="bottom-container">
+            <div class="bottom-container__el1">
+                <h4 class="logo">LinguaSphere</h4>
+                <p class="copyright-text">© 2025, Copyright.</p>
+            </div>
+            <div class="bottom-container__el2">
+                <ul class="socials-list">
+                    <li class="socials-icon">
+                        <img src="./images/socials/instagram.svg" alt="instagram">
+                        <a href=""></a>
+                    </li>
+                    <li class="socials-icon">
+                        <img src="./images/socials/tiktok.svg" alt="instagram">
+                        <a href="#"></a>
+                    </li>
+                    <li class="socials-icon">
+                        <img src="./images/socials/in.svg" alt="instagram">
+                        <a href="#"></a>
+                    </li>
+                    <li class="socials-icon">
+                        <img src="./images/socials/facebook.svg" alt="instagram">
+                        <a href="#"></a>
+                    </li>
+                    <li class="socials-icon">
+                        <img src="./images/socials/telegram.svg" alt="instagram">
+                        <a href="#"></a>
+                    </li>
+                    <li class="socials-icon">
+                        <img src="./images/socials/youtube.svg" alt="instagram">
+                        <a href="#"></a>
+                    </li>
+                </ul>
+                <a class="link">Privacy policy</a>
+            </div>
+            <div class="bottom-container__el3">
+                <button class="button join-button small-button-2">Join</button>
+                <a href="" class="link">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
