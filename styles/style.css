@@ -28,17 +28,26 @@
 }
 
 .logo {
-    font-size: 36px;
+    font-size: clamp(1rem, 0.75rem + 1.25vw, 2.25rem);
     font-family: 'Prata', serif;
     letter-spacing: 0.3px;
+}
+
+.header__menu {
+    display: none;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
 }
 
 .content {
     display: flex;
     flex-direction: column;
     min-width: 320px;
-    margin: 15.25rem auto 0;
+    margin-block-start: 244px;
 }
+
+
 
 .intro-section {
     max-width: 1597px;
@@ -170,19 +179,19 @@
 }
 
 .signup-block::after {
-    width: 1160px;
-    height: 680px;
+    width: 640px;
+    height: 640px;
     content: '';
     position: absolute;
     background: no-repeat url(../images/img_5.png);
     background-size: contain;
-    inset-inline-end: -180px;
+    inset-inline-end: 100px;
     inset-block-end: 0;
 }
 
 .signup-block__title {
     font-family: 'Prata', serif;
-    font-size: 54px;
+    font-size: clamp(2.25rem, 1.7rem + 2.75vw, 5rem);
     color: #38535D;
 }
 
@@ -273,13 +282,14 @@
     display: flex;
     flex-direction: column;
     gap: 38px;
-    padding-inline: 353px 23px;
+    padding-inline: clamp(2.875rem, -29.1042rem + 42.6389vw, 22.0625rem) 23px;
     align-items: flex-end;
 }
 
 .socials-list {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     padding-block-start: 21px;
     gap: 32px;
 }
@@ -349,5 +359,155 @@
     color: #FFF;
     font-size: 24px;
     background-color: #282829;
+}
+
+@media (max-width: 1199px) {
+    .header {
+        justify-content: space-between;
+        gap: clamp(0.25rem, -0.7955rem + 5.2273vw, 3.125rem);
+        padding-inline: 15px;
+    }
+
+    .content {
+        margin-block-start: 122px;
+    }
+
+    .intro-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-block__title {
+        font-size: clamp(2.25rem, 1.7rem + 2.75vw, 5rem);
+        text-align: center;
+    }
+
+    .info-block__desc {
+        font-size: clamp(1.625rem, 1.275rem + 1.75vw, 3.375rem);
+        text-align: center;
+    }
+
+    .info-block__list__item {
+        font-size: 18px;
+    }
+
+    .info-block__list__item::before {
+        margin-inline-start: -50px;
+        margin-block-start: 0px;
+    }
+
+    .accent-text {
+        font-size: 28px;
+    }
+
+    .image-container {
+        inset: 0;
+        width: 100%;
+        background-size: cover;
+        opacity: 0.15;
+    }
+
+    .list-section {
+        display: flex;
+        flex-direction: column;
+        padding-block-start: 60px;
+    }
+
+    .text-block {
+        padding: 0 15px;
+    }
+
+    .signup-section {
+        padding-block: 60px;
+    }
+
+    .signup-block {
+        padding: clamp(1.25rem, -1.4286rem + 8.5714vw, 5rem);
+        background-image: none;
+        gap: 20px;
+    }
+
+    .signup-block__title {
+        text-align: center;
+    }
+
+    .signup-block::after {
+        display: none;
+    }
+
+    .bottom-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+
+    }
+
+    .bottom-container__el1 {
+        align-items: center;
+        gap: 5px;
+        padding: 0;
+    }
+
+    .bottom-container__el2 {
+        align-items: center;
+        flex-direction: column-reverse;
+        gap: 5px;
+        padding: 0;
+    }
+
+    .bottom-container__el3 {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    
+}
+
+@media (max-width: 499px) {
+    .header__navbar-list-item {
+        display: none;
+    }
+
+    .header__menu {
+        display: block;
+    }
+
+    .footer_navbar__list-item {
+        font-size: 12px;
+    }
+
+    .bottom-container {
+        padding: 25px 50px;
+    }
+
+    .button {
+        border-radius: 4px;
+        padding-block: 16px;
+    }
+
+    .small-button {
+        font-size: 16px;
+    }
+    
+    .small-button-2 {
+        font-size: 14px;
+    }
+    
+    .wide-button {
+        font-size: 16px;
+    }
+    
+    .submit-button {
+        font-size: 18px;
+    }
 }
 
